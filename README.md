@@ -6,7 +6,7 @@ This is a command line tool for recording live audio from high sample rate micro
 
 The AudioMoth-Live command line tool is described in detail in the Application Note [here](https://github.com/OpenAcousticDevices/Application-Notes/blob/master/Using_the_AudioMoth_Live_App_with_the_AudioMoth_USB_Microphone/Using_the_AudioMoth_Live_App_with_the_AudioMoth_USB_Microphone.pdf).
 
-The following command will write one-minute files at 48kHz to the local directory `files` using either the default input or an AudioMoth USB Microphone (if connected).
+The following command will write one-minute files at 48 kHz to the local directory `files` using either the default input or an AudioMoth USB Microphone (if connected).
 
 ```
 > AudioMoth-Live autosave 1 files
