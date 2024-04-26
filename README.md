@@ -23,7 +23,7 @@ The following command does the same on Windows.
 AudioMoth-Live can be built on macOS using the Xcode Command Line Tools.
 
 ```
-> clang -I./inc/ -I./miniaudio/ -framework CoreAudio ./src/*.c -o AudioMoth-Live 
+> clang -I../inc/ -I../miniaudio/ -framework CoreFoundation -framework CoreAudio -framework AudioUnit -framework AudioToolbox ../src/*.c -o ./dist/AudioMoth-Live 
 ```
 
 AudioMoth-Live can be built on Windows using the Microsoft Visual C++ Build Tools. Note that to build the correct version you should run the command in the correct environment. Use the 'x64 Native Tools Command Prompt' to build the 64-bit binary on a 64-bit machine, and the 'x64_x86 Cross Tools Command Prompt' to build the 32-bit binary on a 64-bit machine.
