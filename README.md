@@ -1,4 +1,4 @@
-# AudioMoth-Live-Cmd #
+# AudioMoth-Live #
 
 This is a command line tool for recording live audio from high sample rate microphones, including the AudioMoth USB Microphone.
 
