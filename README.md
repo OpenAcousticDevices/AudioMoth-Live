@@ -62,10 +62,11 @@ The Linux and Raspberry Pi shell scripts can also be downloaded directly from th
 ​
 ```
 > curl -LJO https://github.com/OpenAcousticDevices/AudioMoth-Live/releases/download/1.0.0/AudioMothLiveSetup1.0.0.sh
-​```
+```
 
 and
 ​
 ```
 > curl -LJO https://github.com/OpenAcousticDevices/AudioMoth-Live/releases/download/1.0.0/AudioMothLiveBuild1.0.0.sh
-​```
+```
+
