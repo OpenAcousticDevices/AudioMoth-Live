@@ -40,7 +40,7 @@ gcc -I./inc/ -I./miniaudio/ ./src/*.c -o AudioMoth-Live -ldl -lpthread -lm -lato
 
 On macOS, Linux and Raspberry Pi you can copy the resulting executable to `/usr/local/bin/` so it is immediately accessible from the terminal. On Windows copy the executable to a permanent location and add this location to the `PATH` variable.
 
-## Pre-Built Installers ##
+## Pre-built installers ##
 
 Pre-built installers are also available for macOS, Windows, Linux and Raspberry Pi [here](https://github.com/OpenAcousticDevices/AudioMoth-Live/releases/tag/1.0.0).
 
