@@ -39,3 +39,30 @@ gcc -I./inc/ -I./miniaudio/ ./src/*.c -o AudioMoth-Live -ldl -lpthread -lm -lato
 ```
 
 On macOS, Linux and Raspberry Pi you can copy the resulting executable to `/usr/local/bin/` so it is immediately accessible from the terminal. On Windows copy the executable to a permanent location and add this location to the `PATH` variable.
+
+## Pre-Built Installers ##
+
+Pre-built installers are also available for macOS, Windows, Linux and Raspberry Pi [here](https://github.com/OpenAcousticDevices/AudioMoth-Live/releases/tag/1.0.0).
+
+The Linux and Raspberry Pi files are shell scripts that can be run from the command line after downloading with the commands:
+​
+```
+> sh AudioMothLiveSetup1.0.0.sh
+​```
+
+and
+
+```
+> sh AudioMothLiveBuild1.0.0.sh
+​```
+
+The Linux version will copy a pre-compiled executable to /usr/local/bin while the Raspberry Pi will compile the executable from source code and then copy it to /usr/local/bin. Both versions will prompt for the user password in order to complete the copy.
+​
+The Linux and Raspberry Pi shell scripts can also be downloaded directly from the command line with:
+​
+> curl -LJO https://github.com/OpenAcousticDevices/AudioMoth-Live/releases/download/1.0.0/AudioMothLiveSetup1.0.0.sh
+​
+and
+​
+> curl -LJO https://github.com/OpenAcousticDevices/AudioMoth-Live/releases/download/1.0.0/AudioMothLiveBuild1.0.0.sh
+​
