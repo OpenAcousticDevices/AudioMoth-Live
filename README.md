@@ -32,7 +32,7 @@ AudioMoth-Live can be built on Windows using the Microsoft Visual C++ Build Tool
 cl /I.\inc\ /I.\miniaudio\ .\src\*.c /link /out:AudioMoth-Live.exe
 ```
 
-AudioMoth-Live can be built on Linux and Raspberry Pi using the `gcc`.
+AudioMoth-Live can be built on Linux using the `gcc`.
 
 ```
 gcc -I./inc/ -I./miniaudio/ ./src/*.c -o AudioMoth-Live -ldl -lpthread -lm -latomic
