@@ -72,7 +72,7 @@ and
 
 ## Raspberry Pi ##
 
-Most Linux releases currently use PulseAudio to allow applications to connect with audio devices. By default, PulseAudio allows all sample rates. However, from Raspberry Pi OS Bookworm onwards, the Raspberry Pi uses PipeWire rather than PulseAudio for audio. By default, PipeWire does not allow sample rates other than 48kHz.
+Most Linux releases currently use PulseAudio to allow applications to connect with audio devices. By default, PulseAudio allows all sample rates. However, from Raspberry Pi OS Bookworm onwards, the Raspberry Pi uses PipeWire rather than PulseAudio for audio. By default, PipeWire only allows a sample rate of 48kHz.
 
 You can check the install Raspberry Pi OS with:
 
