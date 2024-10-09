@@ -70,3 +70,39 @@ and
 > curl -LJO https://github.com/OpenAcousticDevices/AudioMoth-Live/releases/download/1.0.0/AudioMothLiveBuild1.0.0.sh
 ```
 
+## Raspberry Pi ##
+
+AudioMoth-Live works immediately on installation with Raspberry Pi OS before the current release which is called BookWorm. You can check the install Raspberry Pi OS with:
+
+```
+> cat /etc/os-release
+```
+
+BookWorm uses PipeWire rather than PulseAudio to allow applications to access sound devices. By default, PipeWire does not support sampling rates other than 48kHz. To fix this, edit the PipeWire configuration:
+
+```
+> sudo nano /usr/share/pipewire/pipewire.conf
+```
+
+Uncomment and change the two lines from:
+
+```
+#default.clock.rate          = [ 48000 ] 
+#default.clock.allowed-rates = [ 48000 ] 
+```
+
+to:
+
+```
+default.clock.rate          = [ 48000 ] 
+default.clock.allowed-rates = [ 8000, 16000, 32000, 48000, 96000, 192000, 250000, 384000 ] 
+```
+
+Alternatively, you can switch back to using PulseAudio. To do so, run the configuration utility:
+
+```
+sudo raspi-config
+```
+
+Navigate to '6 Advanced Options' and then 'A7 Audio Config' and switch from '2 PipeWire' to '1 PulseAudio'. Then select 'Ok' to save the change and restart.
+
