@@ -70,7 +70,7 @@ and
 > curl -LJO https://github.com/OpenAcousticDevices/AudioMoth-Live/releases/download/1.0.0/AudioMothLiveBuild1.0.0.sh
 ```
 
-## Raspberry Pi ##
+## Linux and Raspberry Pi ##
 
 Most Linux releases currently use PulseAudio to allow applications to connect with audio devices. By default, PulseAudio supports all sample rates. However, from Raspberry Pi OS Bookworm onwards, the Raspberry Pi uses PipeWire rather than PulseAudio for audio. By default, PipeWire does not support all sample rates.
 
