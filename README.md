@@ -104,3 +104,12 @@ default.clock.rate          = [ 48000 ]
 default.clock.allowed-rates = [ 8000, 16000, 32000, 48000, 96000, 192000, 250000, 384000 ] 
 ```
 
+### Related Repositories ###
+* [AudioMoth Live App](https://github.com/OpenAcousticDevices/AudioMoth-Live-App)
+
+### License ###
+
+Copyright 2023 [Open Acoustic Devices](http://www.openacousticdevices.info/).
+
+[MIT license](http://www.openacousticdevices.info/license).
+
