@@ -82,7 +82,7 @@ You can check the installed audio server with:
 > pactl info
 ```
 
-If the `Server Name` response mentions `pulseaudio`, even in combination with `PulseAudio`, then PipeWire is being used.
+If the `Server Name` response mentions `PipeWire`, even in combination with `PulseAudio`, then PipeWire is being used.
 
 To allow PipeWire to use all the available sample rates, you need to edit the PipeWire configuration:
 
